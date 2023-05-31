@@ -1,0 +1,25 @@
+{
+    "produtos": [
+    {
+    "id": 1,
+    "descricao": "Brigadeiros",
+    "estoque": 10,
+    "valor": 10,
+    "imagem": "./imagens/MG_4421-scaled.jpg"
+    },
+    {
+    "id": 2,
+    "descricao": "Pipoca Doce",
+    "estoque": 5,
+    "valor": 15,
+    "imagem" : "./imagens/infantil.jpg"
+    },
+    {
+    "id": 3,
+    "descricao": "Pirulito de Chocolate",
+    "estoque": 10,
+    "valor": 25,
+    "imagem" : "./imagens/pirulitos_13_137828.jpeg"
+    }
+    ]
+   }
