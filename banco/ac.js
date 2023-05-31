@@ -154,6 +154,8 @@ do {
     }
     dia = leia("Digite o dia de hoje: ");
     cp1.correcao(dia);
+
+    
   } else if (op == "2") {
     console.log("CONTA CORRENTE");
 
