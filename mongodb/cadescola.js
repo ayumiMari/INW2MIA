@@ -20,32 +20,33 @@ db.once('open', function(){
 
 //criando collection dentro do mongodb
 
-const alunoSchema = new mongoose.Schema({
+const alunosSchema = new mongoose.Schema({
     matricula : String,
     nome : String,
     idade : Number,
     turma : String
 });
 
-const aluno = mongoose.model("Aluno" , alunoSchema)
+const alunos = mongoose.model("Aluno" , alunosSchema)
 
-const Patrícia = new aluno({
+const Patrícia = new alunos({
     matricula: 'rm12392',
     nome :  'Patrícia Gomes',
     idade : 15 ,
     turma : '2EMIA'
 })
 
-const Piettra = new aluno({
+Patrícia.save();
+
+const Piettra = new alunos({
     matricula: 'rm134322',
     nome :  'Piettra Carvalho',
     idade : 15 ,
     turma : '2EMIA'
 })
 
-Patrícia.save();
 Piettra.save();
 
-aluno.findOne({nome : 'Piettra Carvalho'}, function(err,aluno){
-    console.log(aluno)
+alunos.findOne({nome : 'Piettra Carvalho' }, function(err, alunos){
+    console.log(alunos)
 })
